@@ -13,12 +13,12 @@ const robotoSerif = Roboto_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.sparshkamat.me'),
-  title: "Sparsh Kamat - Full Stack Developer",
-  description: "The portfolio of Sparsh Kamat, a passionate Full Stack Developer creating dynamic and user-friendly web applications.",
-  keywords: ["Sparsh Kamat", "Full Stack Developer", "Next.js", "React", "TypeScript", "Portfolio", "Full Stack", "Web Development"],
-  authors: [{ name: "Sparsh Kamat", url: "https://www.sparshkamat.me" }],
-  creator: "Sparsh Kamat",
+  metadataBase: new URL('https://www.fediabidi.me'),
+  title: "Fedi Abidi - Mechanical Engineer",
+  description: "The portfolio of Fedi Abidi, a passionate Mechanical Engineer specializing in CAD design, simulation, and manufacturing.",
+  keywords: ["Fedi Abidi", "Mechanical Engineer", "CAD", "ANSYS", "SolidWorks", "CATIA", "Portfolio", "Engineering"],
+  authors: [{ name: "Fedi Abidi", url: "https://www.fediabidi.me" }],
+  creator: "Fedi Abidi",
 
   alternates: {
     canonical: '/',
@@ -28,24 +28,24 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: 'website',
-    url: 'https://www.sparshkamat.me',
-    title: 'Sparsh Kamat - Full Stack Developer',
-    description: 'The portfolio of Sparsh Kamat...',
+    url: 'https://www.fediabidi.me',
+    title: 'Fedi Abidi - Mechanical Engineer',
+    description: 'The portfolio of Fedi Abidi, a passionate Mechanical Engineer specializing in CAD design, simulation, and manufacturing.',
     images: [
       {
-        url: 'https://www.sparshkamat.me/og-image.png', 
+        url: 'https://www.fediabidi.me/og-image.png', 
         width: 1200,
         height: 630,
-        alt: 'Sparsh Kamat Portfolio',
+        alt: 'Fedi Abidi Portfolio',
       },
     ],
   },
   
   twitter: {
     card: 'summary_large_image',
-    title: 'Sparsh Kamat - Full Stack Developer',
-    description: 'The portfolio of Sparsh Kamat...',
-    images: ['https://www.sparshkamat.me/og-image.png'],
+    title: 'Fedi Abidi - Mechanical Engineer',
+    description: 'The portfolio of Fedi Abidi, a passionate Mechanical Engineer specializing in CAD design, simulation, and manufacturing.',
+    images: ['https://www.fediabidi.me/og-image.png'],
   },
 };
 

@@ -3,8 +3,9 @@
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Award, Building2 } from "lucide-react";
+import { Calendar, Award, Building2, ExternalLink } from "lucide-react";
 import { certifications } from "@/lib/certifications-data";
+import Image from "next/image";
 
 export default function Certifications() {
   return (
@@ -29,7 +30,7 @@ export default function Certifications() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {certifications.map((cert, index) => (
             <motion.div
               key={cert.id}
@@ -37,7 +38,17 @@ export default function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                {/* Certification Image */}
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={cert.image}
+                    alt={`${cert.title} certification`}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                
                 <CardHeader className="pb-4">
                   <div className="flex items-start justify-between mb-2">
                     <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
@@ -63,13 +74,23 @@ export default function Certifications() {
                   <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                     {cert.description}
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {cert.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary" className="text-xs">
                         {tech}
                       </Badge>
                     ))}
                   </div>
+                  {/* View Certification Link */}
+                  <a
+                    href={cert.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm text-primary hover:text-primary/80 transition-colors"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-1" />
+                    View Certification
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>

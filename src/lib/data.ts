@@ -9,28 +9,33 @@ export type Project = {
     technologies: string[];
     image: string;
     live: string;
-    github: string;
 };
 
 // Define and export your projects array
 export const projects: Project[] = [
     {
         id: 1,
-        title: "Automotive Component Design",
-        description: "Designed and analyzed automotive suspension components using SolidWorks and ANSYS. Conducted stress analysis, fatigue testing, and optimization for improved performance and weight reduction.",
-        technologies: ["SolidWorks", "ANSYS", "FEA Analysis", "MATLAB", "Design Optimization"],
-        image: "/subscriptionTrackr.jpg",
+        title: "4-Cylinder Inline Engine Configuration",
+        description: "3D CAD model of a complete 4-cylinder inline engine assembly featuring pistons, connecting rods, crankshaft, and main bearings. This assembly demonstrates the conversion of reciprocating piston motion into rotational power through the crankshaft mechanism. Includes flywheel for energy storage and smooth operation.",
+        technologies: ["SolidWorks", "CATIA", "3D Modeling", "Engine Design", "Mechanical Assembly"],
+        image: "/4-cylinder inline engine configuration .png",
         live: "#",
-        github: "https://github.com/fedi-abidi/automotive-design",
     },
     {
         id: 2,
-        title: "Robotic Arm Mechanism",
-        description: "Developed a 6-DOF robotic arm with precision control systems. Implemented kinematic analysis, path planning algorithms, and real-time control using LabVIEW and Python.",
-        technologies: ["SolidWorks", "LabVIEW", "Python", "Control Systems", "Kinematics"],
-        image: "/portfoliomockup.jpg",
+        title: "Coil-Over Shock Absorber System",
+        description: "Complete 3D CAD model of a coil-over shock absorber for automotive and motorcycle suspension systems. Features coil spring, damper body with hydraulic fluid, threaded adjustment collar for preload, and top/bottom mounting eyelets. Designed for shock absorption and oscillation damping in vehicle suspension applications.",
+        technologies: ["SolidWorks", "CATIA", "Suspension Design", "Hydraulic Systems", "Spring-Damper Analysis"],
+        image: "/automotive and motorcycle suspension systems.png",
         live: "#",
-        github: "https://github.com/fedi-abidi/robotic-arm",
+    },
+    {
+        id: 3,
+        title: "Single-Cylinder Piston-Crank Mechanism",
+        description: "3D CAD model of a fundamental crank-slider mechanism featuring a transparent blue piston, golden yellow connecting rod, and grey crankshaft with offset lobes. This mechanism converts reciprocating motion into rotational motion, applicable in internal combustion engines, refrigeration compressors, and pneumatic/hydraulic pumps.",
+        technologies: ["SolidWorks", "CATIA", "Mechanism Design", "Kinematic Analysis", "Reciprocating Systems"],
+        image: "/reciprocating engine or compressor system.png",
+        live: "#",
     },
 ];
 

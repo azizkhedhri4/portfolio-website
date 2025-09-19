@@ -7,6 +7,7 @@ import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Send, CheckCircle, AlertCircle, RotateCcw } from "lucide-react";
+import Image from "next/image";
 import {
   Form,
   FormControl,
@@ -18,7 +19,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { sendEmail } from "@/lib/actions";
 // Form validation schema
 const contactFormSchema = z.object({
   name: z
@@ -62,15 +62,27 @@ export default function Contact() {
     setSubmitStatus(null);
 
     try {
-      const response = await sendEmail(data);
-      if (response.success) {
+      const response = await fetch("https://formspree.io/f/meolyznn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        }),
+      });
+
+      if (response.ok) {
         setSubmitStatus("success");
+        form.reset();
       } else {
         setSubmitStatus("error");
-        throw new Error(response.message || "Failed to send email");
       }
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.error("Error sending form:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -89,10 +101,20 @@ export default function Contact() {
           <h2 className="text-5xl font-serif tracking-tight leading-tight mb-3">
             Contact Me :)
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-lg text-muted-foreground mb-6">
             I'm always open to discussing new projects, creative ideas, or
             opportunities to be part of your vision. Feel free to reach out!
           </p>
+          {/* Signature */}
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/signature.png"
+              alt="Fedi Abidi Signature"
+              width={200}
+              height={80}
+              className="opacity-80 hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
         </div>
 
         <div className="w-full max-w-sm md:max-w-lg px-4 mx-auto lg:px-0">
@@ -126,6 +148,8 @@ export default function Contact() {
           ) : (
             <Form {...form}>
               <form
+                action="https://formspree.io/f/meolyznn"
+                method="POST"
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="space-y-4"
               >
