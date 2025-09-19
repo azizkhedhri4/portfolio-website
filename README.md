@@ -1,4 +1,4 @@
-# Sparsh Kamat - Personal Portfolio
+#  - Personal Portfolio
 
 ![Vercel Deployment](https://img.shields.io/badge/deployment-Vercel-black?style=for-the-badge&logo=vercel)
 ![Next JS](https://img.shields.io/badge/Next.js-15.3.3-blue?style=for-the-badge&logo=next.js)
