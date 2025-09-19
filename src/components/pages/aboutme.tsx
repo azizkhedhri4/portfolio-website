@@ -9,10 +9,10 @@ import { motion } from "motion/react";
 
 export default function AboutMe() {
   const techCategories = [
-    { title: "Frontend", data: frontendTech || [] },
-    { title: "Backend", data: backendTech || [] },
-    { title: "Tools & DevOps", data: toolsAndDevops || [] },
-    { title: "Languages", data: programmingLanguages || [] }
+    { title: "CFAO", data: frontendTech || [] },
+    { title: "Simulation", data: backendTech || [] },
+    { title: "Tools & Manufacturing", data: toolsAndDevops || [] },
+    { title: "Programming", data: programmingLanguages || [] }
   ];
 
   return (
@@ -33,9 +33,9 @@ export default function AboutMe() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Hi, I'm Sparsh - a passionate Full Stack Developer with a knack for
-            creating dynamic, user-friendly applications. Here's a look at the
-            technologies I work with.
+            Hi, I'm Fedi - a passionate Mechanical Engineer with expertise in
+            design, analysis, and innovation. Here's a look at the technologies
+            and skills I work with.
           </motion.p>
         </div>
 

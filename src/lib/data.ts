@@ -16,109 +16,70 @@ export type Project = {
 export const projects: Project[] = [
     {
         id: 1,
-        title: "Subscription Trackr",
-        description: "A full-stack subscription management app built with Next.js and Prisma. Features a responsive dashboard, multi-currency conversion, and automated renewal alerts to help users track their spending.",
-        technologies: ["Next.js", "Supabase", "Tailwind CSS", "Prisma", "Vercel", "OAuth"],
+        title: "Automotive Component Design",
+        description: "Designed and analyzed automotive suspension components using SolidWorks and ANSYS. Conducted stress analysis, fatigue testing, and optimization for improved performance and weight reduction.",
+        technologies: ["SolidWorks", "ANSYS", "FEA Analysis", "MATLAB", "Design Optimization"],
         image: "/subscriptionTrackr.jpg",
-        live: "https://subsciptiontrackr.vercel.app",
-        github: "https://github.com/sparsh-kamat/SubscriptionTrackr",
+        live: "#",
+        github: "https://github.com/fedi-abidi/automotive-design",
     },
     {
         id: 2,
-        title: "Portfolio Website",
-        description: "A modern, SEO-optimized portfolio showcasing my skills and projects. Built from the ground up with Next.js, Tailwind CSS, and Framer Motion to create a fast and engaging user experience.",
-        technologies: ["Next.js", "React", "TypeScript", "Shadcn UI", "Tailwind CSS"],
+        title: "Robotic Arm Mechanism",
+        description: "Developed a 6-DOF robotic arm with precision control systems. Implemented kinematic analysis, path planning algorithms, and real-time control using LabVIEW and Python.",
+        technologies: ["SolidWorks", "LabVIEW", "Python", "Control Systems", "Kinematics"],
         image: "/portfoliomockup.jpg",
-        live: "#", // You can link to the portfolio itself
-        github: "https://github.com/sparsh-kamat/portfolio-website",
+        live: "#",
+        github: "https://github.com/fedi-abidi/robotic-arm",
     },
-    //add 5 more to test carousel
-    // {
-    //     id: 3,
-    //     title: "Subscription Trackr",
-    //     description: "A full-stack subscription management app built with Next.js and Prisma. Features a responsive dashboard, multi-currency conversion, and automated renewal alerts to help users track their spending.",
-    //     technologies: ["Next.js", "Supabase", "Tailwind CSS", "Prisma", "Vercel", "OAuth"],
-    //     image: "/subscriptionTrackr.png",
-    //     live: "https://subsciptiontrackr.vercel.app",
-    //     github: "https://github.com/sparsh-kamat/SubscriptionTrackr",
-    // },
-    // {
-    //     id: 4,
-    //     title: "Portfolio Website",
-    //     description: "A modern, SEO-optimized portfolio showcasing my skills and projects. Built from the ground up with Next.js, Tailwind CSS, and Framer Motion to create a fast and engaging user experience.",
-    //     technologies: ["Next.js", "React", "TypeScript", "Shadcn UI", "Tailwind CSS"],
-    //     image: "/portfoliomockup.png",
-    //     live: "#", // You can link to the portfolio itself
-    //     github: "https://github.com/sparsh-kamat/portfolio-v2",
-    // },
-    // {
-    //     id: 5,
-    //     title: "Subscription Trackr",
-    //     description: "A full-stack subscription management app built with Next.js and Prisma. Features a responsive dashboard, multi-currency conversion, and automated renewal alerts to help users track their spending.",
-    //     technologies: ["Next.js", "Supabase", "Tailwind CSS", "Prisma", "Vercel", "OAuth"],
-    //     image: "/subscriptionTrackr.png",
-    //     live: "https://subsciptiontrackr.vercel.app",
-    //     github: "https://github.com/sparsh-kamat/SubscriptionTrackr",
-    // },
-    // {
-    //     id: 6,
-    //     title: "Portfolio Website",
-    //     description: "A modern, SEO-optimized portfolio showcasing my skills and projects. Built from the ground up with Next.js, Tailwind CSS, and Framer Motion to create a fast and engaging user experience.",
-    //     technologies: ["Next.js", "React", "TypeScript", "Shadcn UI", "Tailwind CSS"],
-    //     image: "/portfoliomockup.png",
-    //     live: "#", // You can link to the portfolio itself
-    //     github: "https://github.com/sparsh-kamat/portfolio-v2",
-    // },
-
-    // ... more projects
 ];
 
 export const historyData = [
     {
       icon: Briefcase,
-      title: "SDE Intern",
-      company: "Visteon",
-      date: "2024 - 2024",
+      title: "Stage en l'industrie aéronautique tunisienne",
+      company: "I.A.T",
+      date: "2025 - 2025",
       description:
-        "Worked on the AOSP framework, enhancing CarService functionality and improving Android services within an automotive context.  Gained hands-on experience with porting features across different Android versions and hardware platforms such as Exynos, Snapdragon, and MediaTek.",
+        "Stage en l'industrie aéronautique tunisienne (I.A.T) - Gained experience in aerospace industry operations, manufacturing processes, and quality control systems.",
     },
     {
-      icon: Code,
-      title: "Started with web development",
-      company: "theodinproject.com",
-      date: "2023 - 2025",
+      icon: Briefcase,
+      title: "Stage",
+      company: "MECANOPRECIS",
+      date: "2024 - 2024",
       description:
-        "Began my journey in web development, learning how learn technologies through documentation. Developed several personal projects to enhance my skills.",
+        "Stage at MECANOPRECIS - Hands-on experience in precision mechanical manufacturing, quality control, and production processes.",
     },
     {
       icon: GraduationCap,
-      title: "B.E(Hons) in Computer Science",
-      institution: "Goa College of Engineering",
-      date: "2021 - 2025",
+      title: "Licence en Génie Mécanique - CFM",
+      institution: "Institut Supérieur des Études Technologiques Jendouba",
+      date: "2023 - 2025",
       description:
-        "Graduated with a 8.6 GPA, focusing on computer science and software development principles.",
+        "Licence en génie mécanique spécialité CFM (Conception Fabrication Mécanique) - Specialized in mechanical design and manufacturing processes.",
+    },
+    {
+      icon: GraduationCap,
+      title: "BAC Technique",
+      institution: "Lycée Farhat Hached Bizerte",
+      date: "2023",
+      description:
+        "Bac technique - Technical high school diploma from Lycée Farhat Hached in Bizerte, providing foundation in technical studies.",
     },
   ];
 
 export const frontendTech = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Shadcn UI",
+    "Fusion 360",
+    "SolidWorks",
+    "CATIA",
 ];
 
 export const backendTech = [
-    "Next.js",
-    "Node.js",
-    "Express",
-    "Prisma",
-    "Supabase",
-    "PostgreSQL",
-    "Django",
+    "ANSYS",
+    "Abaqus",
 ];
 
-export const toolsAndDevops = ["GitHub", "Vercel", "Docker", "Heroku"];
+export const toolsAndDevops = ["Project Management", "Quality Control", "Manufacturing"];
 
-export const programmingLanguages = ["JavaScript", "Java", "C++"];
-
+export const programmingLanguages = ["Python", "MATLAB", "C++", "LabVIEW"];

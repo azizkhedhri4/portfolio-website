@@ -1,9 +1,9 @@
 import GithubIcon from "../../../public/github.svg";
 import LinkedinIcon from "../../../public/linkedin.svg";
-import { Mail } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import profilePhoto from "../../../public/headshot.jpg";
+import profilePhoto from "../../../public/pfp.png";
 import { AuroraBackground } from "../ui/aurora-background";
 export default function Hero() {
   return (
@@ -29,21 +29,7 @@ export default function Hero() {
         <div className="flex-col flex  justify-center">
           <div className="flex-row  justify-center md:justify-start flex gap-4 order-last md:order-first pt-5 md:pt-0">
             <Link
-              href="https://github.com/sparsh-kamat"
-              target="_blank"
-              className="social-link"
-              aria-label="Visit my GitHub profile"
-            >
-              <Image
-                src={GithubIcon}
-                alt="GitHub"
-                className="invert-0 dark:invert transition-all duration-300"
-                width={24}
-                height={24}
-              />
-            </Link>
-            <Link
-              href="https://linkedin.com/in/sparshkamat"
+              href="https://www.linkedin.com/in/fedi-abidi-727726308"
               target="_blank"
               className="social-link"
               aria-label="Visit my LinkedIn profile"
@@ -57,20 +43,28 @@ export default function Hero() {
               />
             </Link>
             <Link
-              href="mailto:kamatsparsh@gmail.com"
+              href="mailto:fediabidi063@gmail.com"
               target="_blank"
               className="social-link"
               aria-label="Send me an email"
             >
               <Mail width={24} height={24} />
             </Link>
+            <Link
+              href="https://www.instagram.com/abidi_fedyy"
+              target="_blank"
+              className="social-link"
+              aria-label="Visit my Instagram profile"
+            >
+              <Instagram width={24} height={24} />
+            </Link>
           </div>
           <h1 className="text-7xl md:pt-4 lg:pt-8 font-serif text-center md:text-left  text-primary">
-            <span>Sparsh</span> {/* Add a space for the inline view */}
-            <span className="block lg:inline text-primary">Kamat</span>
+            <span>Fedi</span> {/* Add a space for the inline view */}
+            <span className="block lg:inline text-primary">Abidi</span>
           </h1>
           <p className="font-serif text-xl pt-4 lg:pt-9 text-muted-foreground">
-            Full Stack Engineer | Tech Enthusiast
+            Mechanical Engineer
           </p>
         </div>
       </div>
